@@ -1,0 +1,18 @@
+---
+- name: Get xcode artifacts
+  shell: wget -O /tmp/Xcode_8.2.1.xip https://artifactory.corp.adobe.com/artifactory/webapp/#/artifacts/browse/tree/General/generic-DI-binary-local/Xcode/8/Xcode_8.2.1.xip 
+
+- name: Uncompress the file
+  shell: xar /tmp/Xcode_8.2.1.xip
+
+- name: Install artifact
+  shell: sudo install -pkg package.pkg -target "/Volumes/Macintosh HD"
+
+- name: Get xcode tools
+  shell: wget -O /tmp/Command_Line_Tools_macOS_10.12_for_Xcode_8.2.dmg https://artifactory.corp.adobe.com/artifactory/webapp/#/artifacts/browse/tree/General/generic-DI-binary-local/Xcode/8/Command_Line_Tools_macOS_10.12_for_Xcode_8.2.dmg 
+
+- name: Attach image
+  shell: hdiutil mount /tmp/Command_Line_Tools_macOS_10.12_for_Xcode_8.2.dmg
+
+- name: Install xcode tools
+  shell: sudo install -pkg package.pkg -target "/Volumes/Macintosh HD"

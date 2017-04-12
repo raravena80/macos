@@ -1,0 +1,17 @@
+[all]
+3d-mac ansible_connection=ssh ansible_user=labuser
+3d-mini1 ansible_connetion=ssh ansible_user=psauto
+3d-mini2 ansible_connetion=ssh ansible_user=ibs
+arch-mac ansible_connection=ssh ansible_user=ibs
+arch-mac02 ansible_connection=ssh ansible_user=ibs
+dag-mac ansible_connection=ssh ansible_user=ibs
+dag-mac02 ansible_connection=ssh ansible_user=ibs
+ibs-mac3 ansible_connection=ssh ansible_user=ibs
+ibs-mac5 ansible_connection=ssh ansible_user=ibs
+ibs-mac7 ansible_connection=ssh ansible_user=ibs
+ps-ibs-mac04 ansible_connection=ssh ansible_user=ibs
+ps-ibs-xserve1 ansible_connection=ssh ansible_user=ibs
+TechTrans-mac ansible_connection=ssh ansible_user=ibs
+TechTrans-mac2 ansible_connection=ssh ansible_user=ibs
+yellow-mac01 ansible_connection=ssh ansible_user=ibs
+cyan-mac ansible_connection=ssh ansible_user=ibs

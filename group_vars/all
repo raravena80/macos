@@ -1,0 +1,17 @@
+---
+# Which version of WordPress to deploy
+
+# These are the WordPress database settings
+
+# You shouldn't need to change this.
+
+# This is used for the nginx server configuration, but access to the
+# WordPress site is not restricted by a named host.
+
+# Disable All Updates
+# By default automatic updates are enabled, set this value to true to disable all automatic updates
+
+#Define Core Update Level
+#true  = Development, minor, and major updates are all enabled
+#false = Development, minor, and major updates are all disabled
+#minor = Minor updates are enabled, development, and major updates are disabled
